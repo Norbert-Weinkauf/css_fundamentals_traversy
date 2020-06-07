@@ -5,6 +5,7 @@ body{
     font-family: Arial, Helvetica, sans-serif; 
     font-size: 16px;
     line-height: 1.6em;
+    overflow: hidden;
 }
 
 .container{
@@ -20,18 +21,77 @@ body{
 }
 
 #main-nav{
-    background-color: #000;
+    background-color: #333;
     color: #f4f4f4;
 }
 
 #main-nav ul{
-    padding: 0;
     list-style: none;
-    margin: 0;
-    padding: 12px 0px;
+    padding: 0;
 }
 
 #main-nav li{
     display: inline;
+}
+
+#main-nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
     padding-right: 15px;
+}
+
+#showcase{
+    background-image: url('/images/bg_coral.jpg');
+    background-position: center right;
+    min-height: 200px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#showcase h1{
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.6em;
+    padding-top: 30px;
+}
+
+#main{
+    float: left;
+    width: 70%;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    background-color: #eee;
+    border: 2px solid #000;
+    border-radius: 5px;
+    float: right;
+    width: 30%;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+#main-footer{
+    position: absolute;
+    bottom: 0px;    
+    width: 100%;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    
+}
+
+@media(max-width:600px){
+    #main{
+        float:none;
+        width:100%;
+    }
+    #sidebar{
+        float:none;
+        width:100%;
+    }
 }
